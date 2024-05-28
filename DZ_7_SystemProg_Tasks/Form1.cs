@@ -17,7 +17,7 @@ namespace DZ_7_SystemProg_Tasks
 	public partial class Form1 : Form
 	{
 		//Подключение спец библиотеки OpenNLP для анализа текста https://github.com/AlexPoint/OpenNlp/blob/master/Resources/Models/EnglishSD.nbin
-		static EnglishMaximumEntropySentenceDetector sentenceDetector = new EnglishMaximumEntropySentenceDetector(Directory.GetCurrentDirectory() + @"\EnglishSD.nbin");
+		static EnglishMaximumEntropySentenceDetector sentenceDetector = new EnglishMaximumEntropySentenceDetector(Directory.GetCurrentDirectory() + @"\Resources\EnglishSD.nbin");
 		string tempstr;
 
 		public Form1()
