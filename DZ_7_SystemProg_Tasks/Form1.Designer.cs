@@ -30,10 +30,10 @@
 		{
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-			this.label1 = new System.Windows.Forms.Label();
-			this.richTextBox_MainRTB = new System.Windows.Forms.RichTextBox();
 			this.btn_analyze = new System.Windows.Forms.Button();
 			this.btn_close = new System.Windows.Forms.Button();
+			this.label1 = new System.Windows.Forms.Label();
+			this.richTextBox1 = new System.Windows.Forms.RichTextBox();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.SuspendLayout();
@@ -44,7 +44,7 @@
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
 			this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-			this.tableLayoutPanel1.Controls.Add(this.richTextBox_MainRTB, 0, 1);
+			this.tableLayoutPanel1.Controls.Add(this.richTextBox1, 0, 1);
 			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -67,27 +67,9 @@
 			this.tableLayoutPanel2.Name = "tableLayoutPanel2";
 			this.tableLayoutPanel2.RowCount = 1;
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
 			this.tableLayoutPanel2.Size = new System.Drawing.Size(794, 29);
 			this.tableLayoutPanel2.TabIndex = 0;
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(3, 0);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(164, 13);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "Введите анализируемый текст";
-			// 
-			// richTextBox_MainRTB
-			// 
-			this.richTextBox_MainRTB.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.richTextBox_MainRTB.Location = new System.Drawing.Point(3, 23);
-			this.richTextBox_MainRTB.Name = "richTextBox_MainRTB";
-			this.richTextBox_MainRTB.Size = new System.Drawing.Size(794, 389);
-			this.richTextBox_MainRTB.TabIndex = 2;
-			this.richTextBox_MainRTB.Text = "";
 			// 
 			// btn_analyze
 			// 
@@ -98,6 +80,7 @@
 			this.btn_analyze.TabIndex = 0;
 			this.btn_analyze.Text = "Анализ";
 			this.btn_analyze.UseVisualStyleBackColor = true;
+			this.btn_analyze.Click += new System.EventHandler(this.btn_analyze_Click);
 			// 
 			// btn_close
 			// 
@@ -109,6 +92,24 @@
 			this.btn_close.Text = "Выход";
 			this.btn_close.UseVisualStyleBackColor = true;
 			this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(3, 0);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(164, 13);
+			this.label1.TabIndex = 1;
+			this.label1.Text = "Введите анализируемый текст";
+			// 
+			// richTextBox1
+			// 
+			this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.richTextBox1.Location = new System.Drawing.Point(3, 23);
+			this.richTextBox1.Name = "richTextBox1";
+			this.richTextBox1.Size = new System.Drawing.Size(794, 389);
+			this.richTextBox1.TabIndex = 2;
+			this.richTextBox1.Text = "";
 			// 
 			// Form1
 			// 
@@ -132,7 +133,7 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button btn_analyze;
 		private System.Windows.Forms.Button btn_close;
-		private System.Windows.Forms.RichTextBox richTextBox_MainRTB;
+		private System.Windows.Forms.RichTextBox richTextBox1;
 	}
 }
 
