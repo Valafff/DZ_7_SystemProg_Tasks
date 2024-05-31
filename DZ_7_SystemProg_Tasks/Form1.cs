@@ -38,9 +38,8 @@ namespace DZ_7_SystemProg_Tasks
 		//Подсчет символов (async выдергивает тип данных из таска)
 		async static Task<int> GetSymbolsNumber(string _tempstr)
 		{
-			int count = 0;
-			count = _tempstr.Length;
-			return count;
+			_tempstr = _tempstr.Replace(" ", "");
+			return _tempstr.Length;
 		}
 		//Подсчет предложений
 		async static Task<int> GetSentenceNumber(string _tempstr)
